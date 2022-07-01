@@ -1,7 +1,10 @@
-package recensement;
+package recensement.entities.instanced;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import recensement.entities.GeographicEntity;
+import recensement.utils.NumUtils;
 
 public class Department extends GeographicEntity {
 

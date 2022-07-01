@@ -1,10 +1,19 @@
-package recensement;
+package recensement.services.secondary;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+
+import recensement.entities.GeographicEntity;
+import recensement.entities.exceptions.CancelSearchException;
+import recensement.entities.instanced.City;
+import recensement.entities.instanced.Department;
+import recensement.entities.instanced.Region;
+import recensement.services.secondary.specific.DisplayService;
+import recensement.services.secondary.specific.PromptService;
+import recensement.services.secondary.specific.SearchService;
 
 public class SecondaryService {
 	

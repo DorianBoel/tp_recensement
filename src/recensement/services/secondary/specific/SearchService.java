@@ -1,8 +1,13 @@
-package recensement;
+package recensement.services.secondary.specific;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import recensement.entities.instanced.City;
+import recensement.entities.instanced.Department;
+import recensement.utils.StringUtils;
+import recensement.utils.comparators.CityNameComparator;
 
 public class SearchService {
 	

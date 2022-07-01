@@ -1,4 +1,4 @@
-package recensement;
+package recensement.utils;
 
 import java.text.NumberFormat;
 import java.util.Locale;

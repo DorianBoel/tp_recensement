@@ -1,4 +1,4 @@
-package recensement;
+package recensement.entities.exceptions;
 
 public class CancelSearchException extends Exception {
 

@@ -1,4 +1,4 @@
-package recensement;
+package recensement.utils;
 
 import java.text.Normalizer;
 import java.util.regex.Matcher;

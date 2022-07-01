@@ -1,6 +1,9 @@
-package recensement;
+package recensement.utils.comparators;
 
 import java.util.Comparator;
+
+import recensement.entities.instanced.Region;
+import recensement.utils.StringUtils;
 
 public class RegionNameComparator implements Comparator<Region> {
 

@@ -1,10 +1,15 @@
-package recensement;
+package recensement.entities;
 
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import recensement.entities.instanced.City;
+import recensement.entities.instanced.Department;
+import recensement.entities.instanced.Region;
+import recensement.services.secondary.specific.FileAccess;
 
 public class Census {
 
@@ -17,14 +22,14 @@ public class Census {
 	private List<Region> regionList = new ArrayList<>();
 	
 	// Constructor
-	private Census() throws IOException {
+	private Census() throws FileNotFoundException {
 		this.initiateCityList();
 		this.initiateDepartmentList();
 		this.initiateRegionList();
 	}
 	
 	//Class methods
-	public static Census getInstance() throws IOException {
+	public static Census getInstance() throws FileNotFoundException {
 		if (singleInstance == null) {        	
 			singleInstance = new Census();
 		}
@@ -32,7 +37,7 @@ public class Census {
 	}
 	
 	// Instance methods
-	private void initiateCityList() throws IOException {
+	private void initiateCityList() throws FileNotFoundException {
 		if (this.cityList.size() == 0) {
 			List<String> lines = FileAccess.getLines();
 			for (int i = 1; i < lines.size(); i++) {

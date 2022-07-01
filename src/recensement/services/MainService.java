@@ -1,7 +1,20 @@
-package recensement;
+package recensement.services;
 
 import java.util.List;
 import java.util.Scanner;
+
+import recensement.entities.Census;
+import recensement.entities.exceptions.CancelSearchException;
+import recensement.entities.exceptions.NoResultsException;
+import recensement.entities.instanced.City;
+import recensement.entities.instanced.Department;
+import recensement.entities.instanced.Region;
+import recensement.services.secondary.SecondaryService;
+import recensement.services.secondary.specific.DisplayService;
+import recensement.utils.comparators.CityPopulationComparator;
+import recensement.utils.comparators.DepartmentPopulationComparator;
+import recensement.utils.comparators.RegionNameComparator;
+import recensement.utils.comparators.RegionPopulationComparator;
 
 public class MainService {
 

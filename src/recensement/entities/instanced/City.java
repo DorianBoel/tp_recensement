@@ -1,4 +1,7 @@
-package recensement;
+package recensement.entities.instanced;
+
+import recensement.entities.GeographicEntity;
+import recensement.utils.NumUtils;
 
 public class City extends GeographicEntity {
 

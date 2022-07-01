@@ -1,6 +1,8 @@
-package recensement;
+package recensement.utils.comparators;
 
 import java.util.Comparator;
+
+import recensement.entities.instanced.Department;
 
 public class DepartmentPopulationComparator implements Comparator<Department> {
 

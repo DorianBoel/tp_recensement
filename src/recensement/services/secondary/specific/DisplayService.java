@@ -1,6 +1,8 @@
-package recensement;
+package recensement.services.secondary.specific;
 
 import java.util.List;
+
+import recensement.entities.GeographicEntity;
 
 public class DisplayService {
 

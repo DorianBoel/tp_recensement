@@ -1,4 +1,4 @@
-package recensement;
+package recensement.entities;
 
 public abstract class GeographicEntity {
 	

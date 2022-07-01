@@ -1,4 +1,4 @@
-package recensement;
+package recensement.services.secondary.specific;
 
 import java.util.Arrays;
 import java.util.List;
