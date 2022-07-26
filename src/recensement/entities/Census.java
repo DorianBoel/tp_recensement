@@ -11,24 +11,55 @@ import recensement.entities.instanced.Department;
 import recensement.entities.instanced.Region;
 import recensement.services.secondary.specific.FileAccess;
 
+/**
+ * Singleton class containing all registered 
+ * geographic census data stored in lists.
+ * 
+ * @author DorianBoel
+ */
 public class Census {
 
-	// Class attributes
+	/**
+	 * The single instance this class can possess.
+	 */
 	private static Census singleInstance = null;
 	
-	//Instance attributes
+	/**
+	 * A list containing all registered city instances.
+	 */
 	private List<City> cityList = new ArrayList<>();
+	
+	/**
+	 * A list containing all registered department instances.
+	 */
 	private List<Department> departmentList = new ArrayList<>();
+	
+	/**
+	 * A list containing all registered city instances.
+	 */
 	private List<Region> regionList = new ArrayList<>();
 	
-	// Constructor
+	/**
+	 * Constructor for {@link #Census}.
+	 * Initiates each list of geographic instances.
+	 * 
+	 * @throws FileNotFoundException If any one of the instance
+	 * lists fails to load.
+	 */
 	private Census() throws FileNotFoundException {
-		this.initiateCityList();
-		this.initiateDepartmentList();
-		this.initiateRegionList();
+		initiateCityList();
+		initiateDepartmentList();
+		initiateRegionList();
 	}
 	
-	//Class methods
+	/**
+	 * Returns the single instance of this class, 
+	 * or initiates one if none exist.
+	 * 
+	 * @return The single instance of this class
+	 * @throws FileNotFoundException If the instance fails to
+	 * be constructed.
+	 */
 	public static Census getInstance() throws FileNotFoundException {
 		if (singleInstance == null) {        	
 			singleInstance = new Census();
@@ -36,7 +67,14 @@ public class Census {
 		return singleInstance;
 	}
 	
-	// Instance methods
+	/**
+	 * Parses through and creates
+	 * a {@link recensement.entities.instanced.City City}
+	 * instance for each CSV data record before adding
+	 * it to the city list.
+	 * 
+	 * @throws FileNotFoundException If the CSV data is not accessible.
+	 */
 	private void initiateCityList() throws FileNotFoundException {
 		if (this.cityList.size() == 0) {
 			List<String> lines = FileAccess.getLines();
@@ -55,6 +93,12 @@ public class Census {
 		}
 	}
 	
+	/**
+	 * Creates a {@link recensement.entities.instanced.Department Department}
+	 * instance for each unique department code
+	 * within the list of city entries before adding
+	 * it to the department list.
+	 */
 	private void initiateDepartmentList() {
 		if (this.departmentList.size() == 0) {
 			Set<String> codeSet = new HashSet<>();
@@ -77,6 +121,12 @@ public class Census {
 		}
 	}
 	
+	/**
+	 * Creates a {@link recensement.entities.instanced.Region Region}
+	 * instance for each unique region code
+	 * within the list of department entries before adding
+	 * it to the region list.
+	 */
 	private void initiateRegionList() {
 		if (this.regionList.size() == 0) {
 			Set<String> codeSet = new HashSet<>();
@@ -99,15 +149,29 @@ public class Census {
 		}
 	}
 
-	// Getters
+	/**
+	 * Getter for {@link #cityList}.
+	 * 
+	 * @return The list of city instances
+	 */
 	public List<City> getCityList() {
 		return this.cityList;
 	}
 	
+	/**
+	 * Getter for {@link #departmentList}.
+	 * 
+	 * @return The list of department instances
+	 */
 	public List<Department> getDepartmentList() {
 		return this.departmentList;
 	}
 	
+	/**
+	 * Getter for {@link #regionList}.
+	 * 
+	 * @return The list of region instances
+	 */
 	public List<Region> getRegionList() {
 		return regionList;
 	}

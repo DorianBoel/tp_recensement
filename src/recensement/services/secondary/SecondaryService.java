@@ -16,7 +16,7 @@ import recensement.services.secondary.specific.PromptService;
 import recensement.services.secondary.specific.SearchService;
 
 /**
- * Non-instanciable class containing
+ * Non-instantiable class containing
  * intermediate service methods called by 
  * the main service.
  * 

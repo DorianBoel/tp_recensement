@@ -10,7 +10,7 @@ import recensement.utils.StringUtils;
 import recensement.utils.comparators.CityNameComparator;
 
 /**
- * Non-instanciable class containing methods used to
+ * Non-instantiable class containing methods used to
  * search through lists of registered census data for
  * matching results based on a given search term.
  * 

@@ -17,10 +17,10 @@ import java.util.List;
 public final class FileAccess {
 
 	/**
-	 * The path to the "recensement.csv" file containing
+	 * The path to the "census.csv" file containing
 	 * all the census data.
 	 */
-	private static final Path PATH_FILE = Paths.get("recensement.csv");
+	private static final Path PATH_FILE = Paths.get("census.csv");
 	
 	/**
 	 * Gets a list containing all lines from the {@link PATH_FILE} CSV file.

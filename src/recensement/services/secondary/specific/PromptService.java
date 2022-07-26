@@ -3,7 +3,7 @@ package recensement.services.secondary.specific;
 import java.util.Scanner;
 
 /**
- * Non-instanciable class containing methods used to
+ * Non-instantiable class containing methods used to
  * prompt the user and retrieve the input.
  * 
  * @author DorianBoel

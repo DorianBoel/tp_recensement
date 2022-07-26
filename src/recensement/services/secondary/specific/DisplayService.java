@@ -5,7 +5,7 @@ import java.util.List;
 import recensement.entities.GeographicEntity;
 
 /**
- * Non-instanciable class containing methods used to
+ * Non-instantiable class containing methods used to
  * display specific messages to the user relating to
  * the different functions within the app.
  * 
