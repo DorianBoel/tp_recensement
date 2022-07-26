@@ -9,6 +9,9 @@ package recensement.entities.exceptions;
  */
 public class CancelSearchException extends Exception {
 
+	/**
+ 	 * @see java.io.Serializable
+ 	 */	 
 	@java.io.Serial
 	private static final long serialVersionUID = -2973608392861097872L;
 

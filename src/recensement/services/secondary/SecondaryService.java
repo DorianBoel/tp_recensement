@@ -31,12 +31,12 @@ public final class SecondaryService {
 	
 	/**
 	 * Asks the user for city name input and submits it to the
-	 * {@link recensement.entities.services.specific.SearchService SearchService}.
+	 * {@link SearchService}.
 	 * Then returns the list of matching cities.
 	 * 
-	 * @param cityList A full list of {@link recensement.entities.instanced.City City} instances
-	 * @param scanner The main prompt {@link java.util.Scanner Scanner}
-	 * @return A list containing the {@link recensement.entities.instanced.City City} results
+	 * @param cityList A full list of {@link City} instances
+	 * @param scanner The main prompt {@link Scanner}
+	 * @return A list containing the {@link City} results
 	 * @throws CancelSearchException If the user submits an input with no non-whitespace characters.
 	 */
 	public static List<City> searchCity(List<City> cityList, Scanner scanner) throws CancelSearchException {
@@ -50,12 +50,12 @@ public final class SecondaryService {
 	
 	/**
 	 * Allows the user to input a department code and submits it to the
-	 * {@link recensement.entities.services.specific.SearchService SearchService}.
+	 * {@link SearchService SearchService}.
 	 * Then returns the matching department.
 	 * 
-	 * @param cityList A full list of {@link recensement.entities.instanced.Department Department} instances
-	 * @param scanner The main prompt {@link java.util.Scanner Scanner}
-	 * @return A {@link recensement.entities.instanced.Department Department} matching the submitted code
+	 * @param departmentList A full list of {@link Department} instances
+	 * @param scanner The main prompt {@link Scanner}
+	 * @return A {@link Department} matching the submitted code
 	 * @throws CancelSearchException If the user submits an input with no non-whitespace characters.
 	 */
 	public static Department searchDepartment(List<Department> departmentList, Scanner scanner) throws CancelSearchException {

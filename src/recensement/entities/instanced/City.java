@@ -154,7 +154,7 @@ public class City extends GeographicEntity {
 	/**
 	 * Setter for {@link #regionName}
 	 * 
-	 * @param departmentCode The new region name to replace
+	 * @param regionName The new region name to replace
 	 * the current one
 	 */
 	public void setRegionName(String regionName) {
@@ -164,7 +164,7 @@ public class City extends GeographicEntity {
 	/**
 	 * Setter for {@link #regionCode}
 	 * 
-	 * @param departmentCode The new region code to replace
+	 * @param regionCode The new region code to replace
 	 * the current one
 	 */
 	public void setRegionCode(String regionCode) {
@@ -174,7 +174,7 @@ public class City extends GeographicEntity {
 	/**
 	 * Setter for {@link #population}
 	 * 
-	 * @param departmentCode The new population value to replace
+	 * @param population The new population value to replace
 	 * the current one
 	 */
 	public void setPopulation(int population) {
