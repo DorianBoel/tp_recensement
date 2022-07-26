@@ -23,7 +23,7 @@ public final class StringUtils {
 	 * Trims whitespace and escapes special characters
 	 * in a given String.
 	 * 
-	 * @param term The string to sanitized
+	 * @param term The string to sanitize
 	 * @return The sanitized string
 	 */
 	public static String sanitize(String term) {
@@ -40,9 +40,9 @@ public final class StringUtils {
 	 * @return The string with all accents removed
 	 */
 	public static String stripAccents(String str) {
-	    str = Normalizer.normalize(str, Normalizer.Form.NFD);
-	    str = str.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
-	    return str;
+        str = Normalizer.normalize(str, Normalizer.Form.NFD);
+        str = str.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+        return str;
 	}
 	
 	/**

@@ -111,7 +111,7 @@ public class Application {
 							break;
 						case ("9") :
 							MainService.exit();
-						 	break;
+							break;
 						default :
 							MainService.defaultOption();
 					}

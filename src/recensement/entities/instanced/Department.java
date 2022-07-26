@@ -13,7 +13,6 @@ import recensement.utils.NumUtils;
  */
 public class Department extends GeographicEntity {
 
-	// Instance attributes
 	/**
 	 * The numerical code of the region the department
 	 * belongs to. 
@@ -91,7 +90,7 @@ public class Department extends GeographicEntity {
 	/**
 	 * Setter for {@link #regionCode}.
 	 * 
-	 * @return The new region code to replace
+	 * @param regionCode The new region code to replace
 	 * the current one
 	 */
 	public void setRegionCode(String regionCode) {

@@ -6,6 +6,11 @@ import java.util.List;
 import recensement.entities.GeographicEntity;
 import recensement.utils.NumUtils;
 
+/**
+ * Represents a single region of France.
+ * 
+ * @author DorianBoel
+ */
 public class Region extends GeographicEntity {
 
 	/**
@@ -89,9 +94,9 @@ public class Region extends GeographicEntity {
 	}
 
 	/**
-	 * Getter for {@link #cities}.
+	 * Getter for {@link #departments}.
 	 * 
-	 * @return The list of this department's cities
+	 * @return The list of this region's departments
 	 */
 	public List<Department> getDepartments() {
 		return this.departments;
